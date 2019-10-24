@@ -535,20 +535,6 @@ a {
   cursor: pointer;
 }
 
-.slider__swich-active::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  left: 3px;
-  top: 3px;
-  vertical-align: top;
-  background-color: transparent;
-  border: 2px solid black;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 .slider__monopod,
 .slider__fitness,
 .slider__quadrocopter {
@@ -598,18 +584,33 @@ a {
   cursor: pointer;
 }
 
-.slider__switch-active::after {
+.slider__selection-list label::after {
   content: "";
-  position: absolute;
+  position: relative;
   width: 6px;
   height: 6px;
+  top: -8px;
   left: 3px;
-  top: 3px;
   vertical-align: top;
   background-color: transparent;
   border: 2px solid black;
   border-radius: 50%;
   cursor: pointer;
+  transform: scale(0);
+}
+
+.slider__switch input:checked ~ .slider__selection-list label::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 2px;
+  top: -8px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  transform: scale(1);
 }
 
 .slider__information {
