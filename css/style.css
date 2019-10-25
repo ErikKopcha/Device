@@ -120,6 +120,7 @@ body {
   height: 8px;
   background: rgb(240,197,46);
   z-index: -1;
+  transition: all 0.3s ease;
 }
 
 .style__button:hover::after,
@@ -385,6 +386,7 @@ a {
   line-height: 36px;
   background: #f7e296;
   z-index: 1;
+  transition: all 0.5s ease;
 }
 
 .header__nav-item {
@@ -403,7 +405,6 @@ a {
 .header__nav-item:not(:hover) a + .submenu__list {
   visibility: hidden;
   opacity: 0;
-  transition: all .3s ease-in-out;
 }
 
 .submenu__list-col-1 .submenu__item:first-child {
@@ -572,6 +573,7 @@ a {
 }
 
 .slider__selection-list label {
+  position: relative;
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -584,33 +586,18 @@ a {
   cursor: pointer;
 }
 
-.slider__selection-list label::after {
+.slider__switch-active::after {
   content: "";
-  position: relative;
+  position: absolute;
   width: 6px;
   height: 6px;
-  top: -8px;
-  left: 3px;
+  left: 1px;
+  top: 1px;
   vertical-align: top;
   background-color: transparent;
   border: 2px solid black;
   border-radius: 50%;
   cursor: pointer;
-  transform: scale(0);
-}
-
-.slider__switch input:checked ~ .slider__selection-list label::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  left: 2px;
-  top: -8px;
-  vertical-align: top;
-  background-color: transparent;
-  border: 2px solid black;
-  border-radius: 50%;
-  transform: scale(1);
 }
 
 .slider__information {
@@ -675,6 +662,7 @@ a {
   height: 8px;
   background: rgb(240,197,46);
   z-index: -1;
+  transition: all 0.3s ease;
 }
 
 .slider__btn .style__button:hover::after,
@@ -819,10 +807,6 @@ a {
   margin-left: 40px;
 }
 
-.slider__quadrocopter .slider__info {
-
-}
-
 .slider__quadrocopter .slider__info-title {
   font-size: 46px;
   margin-top: 17px;
@@ -942,6 +926,10 @@ a {
   letter-spacing: 0.15px;
   margin: 0;
   color: #464646;
+}
+
+.services__block-item:hover button {
+  transition: all 0.3s ease;
 }
 
 .services__block-btn {
