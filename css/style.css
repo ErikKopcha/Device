@@ -386,7 +386,17 @@ a {
   line-height: 36px;
   background: #f7e296;
   z-index: 1;
-  transition: all 0.5s ease;
+}
+
+.submenu__list::before {
+  content: "";
+  position: absolute;
+  top: -27px;
+  left: 58px;
+  opacity: 1;
+  height: 30px;
+  width: 250px;
+  z-index: 2;
 }
 
 .header__nav-item {
