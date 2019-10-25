@@ -1,5 +1,5 @@
-# Sport Store
+**Project:** Device
 
-#Description: HTML5 & CSS3
+**Description:** HTML5 / CSS3 / JS
 
-#GitHub Pages - <a href="https://erikkopcha.github.io/sport-store/">Link</a>
+**GitHub Pages:** [Device](https://erikkopcha.github.io/Device-Academy/)
