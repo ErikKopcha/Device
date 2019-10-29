@@ -73,8 +73,8 @@
         </div>
         <div class="slider__selection-list">
           <label class="slider__switch-active" for="slider1">1</label>
-          <label class="slider__switch-active" for="slider2">2</label>
-          <label class="slider__switch-active" for="slider3">3</label>
+          <label for="slider2">2</label>
+          <label for="slider3">3</label>
         </div>
         <div class="slider__monopod ">
           <div class="slider__image">
@@ -225,45 +225,48 @@
         <div class="services__block">
           <ul class="services__block-list">
             <li class="services__block-item">
-              <button class="services__block-btn-off style__button-off services__active">Доставка</button>
+              <input id="delivery" name="btn" type="radio" class="services__block-btn style__button" checked>
+              <label class="services__block-btn style__button" for="delivery">Доставка</label>
             </li>
             <li class="services__block-item">
-              <button class="services__block-btn style__button">Гарантия</button>
+              <input id="guarantee" name="btn" type="radio" class="services__block-btn style__button">
+              <label class="services__block-btn style__button" for="guarantee">Гарантия</label>
             </li>
             <li class="services__block-item">
-              <button class="services__block-btn style__button">Кредит</button>
+              <input id="credit" name="btn" type="radio" class="services__block-btn style__button">
+              <label class="services__block-btn style__button" for="credit">Кредит</label>
             </li>
           </ul>
         </div>
-        <div class="services__text">
+        <div class="services__text delivery">
           <h3 class="services__text-title">Доставка</h3>
           <p class="services__text-desc">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
             поднимая его на ваш этаж.
           </p>
         </div>
-        <div class="services__img">
+        <div class="services__img delivery__img">
           <img src="img/device-index/delivery.svg" width="136" height="164" alt="Доставка">
         </div>
-        <div class="services__text visually-hidden">
-          <h3 class="services__text-title">Гарантия</h3>
+        <div class="services__text guarantee">
+          <h3 class="services__text-title" >Гарантия</h3>
           <p class="services__text-desc">
             Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br>
             Товар, не дом, конечно же.
           </p>
         </div>
-        <div class="services__img visually-hidden">
+        <div class="services__img guarantee__img">
           <img src="img/device-index/warranty.svg" width="171" height="195" alt="Гарантия">
         </div>
-        <div class="services__text visually-hidden">
+        <div class="services__text credit">
           <h3 class="services__text-title">Кредит</h3>
           <p class="services__text-desc">
             Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
             условия кредита. Выгодные для нашего банка, разумеется.
           </p>
         </div>
-        <div class="services__img visually-hidden">
-          <img src="img/device-index/credit.svg" width="156" height="186" alt="Кредит">
+        <div class="services__img credit__img">
+          <img src="img/device-index/credit.svg" width="156" height="188" alt="Кредит">
         </div>
       </div>
     </section>

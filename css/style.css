@@ -590,7 +590,6 @@ a {
   margin-right: 20px;
   vertical-align: top;
   color: #262626;
-  background-color: transparent;
   border: 2px solid black;
   border-radius: 50%;
   cursor: pointer;
@@ -905,6 +904,7 @@ a {
 
 .services__block {
   width: 160px;
+  margin-top: 9px;
 }
 
 .services__block-list {
@@ -997,9 +997,11 @@ a {
   color: #f7e184;
 }
 
-.services__active {
-  display: inline-block;
-  vertical-align: middle;
+.services__block-item input {
+  display: none;
+}
+
+.services__block-item input:checked ~ label {
   position: relative;
   font-family: "Gilroy", "Arial", sans-serif;
   width: 160px;
@@ -1018,6 +1020,43 @@ a {
   outline: inherit;
   z-index: 1;
 }
+
+.guarantee,
+.guarantee__img,
+.credit,
+.credit__img {
+  display: none;
+}
+
+.services__block-item label {
+  padding-top: 8px;
+}
+
+.services__block-item input:checked ~ label::after {
+  display: none;
+}
+
+  /*.services__active {*/
+/*  display: inline-block;*/
+/*  vertical-align: middle;*/
+/*  position: relative;*/
+/*  font-family: "Gilroy", "Arial", sans-serif;*/
+/*  width: 160px;*/
+/*  height: 40px;*/
+/*  margin-bottom: 25px;*/
+/*  color: #f7e184;*/
+/*  background: #000000;*/
+/*  box-shadow: 120px 0 0 0 rgba(0, 0, 0, 1);*/
+/*  font-size: 18px;*/
+/*  line-height: 24px;*/
+/*  font-weight: 800;*/
+/*  letter-spacing: 3.6px;*/
+/*  text-align: center;*/
+/*  text-transform: uppercase;*/
+/*  border: none;*/
+/*  outline: inherit;*/
+/*  z-index: 1;*/
+/*}*/
 
 /* Секция партнеров */
 .company {
