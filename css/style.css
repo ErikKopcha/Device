@@ -2428,7 +2428,7 @@ fieldset:first-child {
 .style__button-filter::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 16px;
   left: 0;
   width: 200px;
   height: 8px;
@@ -2440,7 +2440,7 @@ fieldset:first-child {
 .style__button-filter:focus::after {
   content: "";
   position: absolute;
-  top: -8px;
+  top: -1px;
   left: 0;
   width: 200px;
   height: 40px;
