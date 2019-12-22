@@ -1,3 +1,3 @@
 **Project:** Device
 
-**Description:** HTML5 / CSS3 / JS
+**Technology stack:** HTML5 / CSS3 / JS
