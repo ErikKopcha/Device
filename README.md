@@ -2,4 +2,4 @@
 
 **Technology stack:** HTML5 / CSS3 / JS
 
-**GitHub Pages:** <a href="https://erikkopcha.github.io/Device-Academy/index.html">Link</a>
+**GitHub Pages:** <a href="https://erikkopcha.github.io/device-academy/">Link</a>
